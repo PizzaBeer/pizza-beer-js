@@ -1,7 +1,7 @@
 'use strict';
 
 const app = require('../app-data.js');
-
+const ui = require('../ui/ui.js');
 
 const users = (success, fail) => {
   console.log('Start request');
@@ -9,22 +9,11 @@ const users = (success, fail) => {
     method: 'GET',
     url: app,
   })
-  .done(success)
-  .fail(fail);
-  console.log('Request made');
-};
-
-
-const success = (people) => {
-  console.log(people);
-};
-
-const failure = (error) => {
-  console.error(error);
+  .success((people) => ui.displayUsers(people));
+  .fail(failure) => console.error(error);
 };
 
 
 module.exports= {
-  success,
-  failure
+  users
 };
