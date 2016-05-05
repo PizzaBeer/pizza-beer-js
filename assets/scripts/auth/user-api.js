@@ -13,3 +13,18 @@ const users = (success, fail) => {
   .fail(fail);
   console.log('Request made');
 };
+
+
+const success = (people) => {
+  console.log(people);
+};
+
+const failure = (error) => {
+  console.error(error);
+};
+
+
+module.exports= {
+  success,
+  failure
+};
