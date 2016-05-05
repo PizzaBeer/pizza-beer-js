@@ -7,7 +7,7 @@ const users = () => {
   console.log('Start request');
   $.ajax({
     method: 'GET',
-    url: app,
+    url: app.url,
   })
   .success((people) => ui.displayUsers(people))
   .fail((failure) => console.error(failure));
