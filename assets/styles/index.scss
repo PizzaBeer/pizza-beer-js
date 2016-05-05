@@ -2,20 +2,20 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
 @media (max-width: 600px) {
- * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
  }
 }
 
 table {
-  font-size: .9em;
-  font-family: Arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  float: left;
   border: 1px solid #aaa;
+  border-collapse: collapse;
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: .9em;
+  width: 100%;
 }
 
 td,
