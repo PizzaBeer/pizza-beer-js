@@ -10,7 +10,7 @@ const users = (success, fail) => {
     url: app,
   })
   .success((people) => ui.displayUsers(people));
-  .fail(failure) => console.error(error);
+  .fail(failure) => console.error(failure);
 };
 
 
