@@ -1,14 +1,6 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-@media (max-width: 600px) {
-  * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
- }
-}
-
 table {
   border: 1px solid #aaa;
   border-collapse: collapse;
@@ -28,4 +20,12 @@ th {
   text-align: left;
   border: 0;
   border-bottom: 1px solid #aaa;
+}
+
+@media (max-width: 600px) {
+ * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
 }
