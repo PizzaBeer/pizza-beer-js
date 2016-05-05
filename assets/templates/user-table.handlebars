@@ -1,0 +1,31 @@
+<thead>
+  <tr>
+    <th data-field="name">Name</th>
+    <th data-field="username">Username</th>
+    <th data-field="email">Email</th>
+    <th data-field="address">Address</th>
+    <th data-field="phone">Phone</th>
+    <th data-field="website">Website</th>
+    <th data-field="company">Company</th>
+  </tr>
+</thead>
+<tbody>
+  {{#people}}
+    <tr>
+      <td><p>{{this.name}}</p></td>
+      <td><p>{{this.username}}</p></td>
+      <td><p>{{this.email}}</p></td>
+      <td>
+        <p>
+          {{this.address.street}}<br />
+          {{this.address.suite}}<br />
+          {{this.address.city}}<br />
+          {{this.address.zipcode}}
+        </p>
+      </td>
+      <td><p>{{this.phone}}</p></td>
+      <td><p>{{this.website}}</p></td>
+      <td><p>{{this.company.name}}</p></td>
+    </tr>
+  {{/people}}
+</tbody>
