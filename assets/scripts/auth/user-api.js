@@ -3,7 +3,7 @@
 const app = require('../app-data.js');
 const ui = require('../ui/ui.js');
 
-const users = (success, fail) => {
+const users = () => {
   console.log('Start request');
   $.ajax({
     method: 'GET',
