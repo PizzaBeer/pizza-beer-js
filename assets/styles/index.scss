@@ -7,6 +7,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
  }
+}
 
 table {
   font-size: .9em;
@@ -17,7 +18,8 @@ table {
   border: 1px solid #aaa;
 }
 
-td, th {
+td,
+th {
   text-align: left;
   padding: 10px 5px;
   border: 1px solid #aaa;
