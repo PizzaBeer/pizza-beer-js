@@ -1,6 +1,6 @@
 'user strict';
 
-const app = require('../app-data.js');
+const app = require('../../app-data.js');
 const authApi = require('../auth/user-api.js');
 
 //runs ajax call to get users

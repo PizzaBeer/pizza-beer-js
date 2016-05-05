@@ -1,16 +1,18 @@
 'use strict';
 
-const app = require('../app-data.js');
+const app = require('../../app-data.js');
 const ui = require('../ui/ui.js');
 
 const users = () => {
   console.log('Start request');
   $.ajax({
     method: 'GET',
-    url: app,
+    url: app.api
   })
-  .success((people) => ui.displayUsers(people));
-  .fail(failure) => console.error(failure);
+  .success((people) =>  {
+    ui.displayUsers(people);
+  })
+  .fail((failure) => console.error(failure));
 };
 
 
