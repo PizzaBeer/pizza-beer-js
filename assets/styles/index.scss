@@ -20,12 +20,12 @@ table {
 
 td,
 th {
-  text-align: left;
+ border: 1px solid #aaa;
   padding: 10px 5px;
-  border: 1px solid #aaa;
   display: block;
   float: left;
   text-align: center;
+  text-align: left;
   border: 0;
   border-bottom: 1px solid #aaa;
 }
